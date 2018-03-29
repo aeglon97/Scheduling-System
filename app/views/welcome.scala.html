@@ -1,0 +1,267 @@
+@(message: String, style: String = "java")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+    <section id="top">
+        <div class="wrapper">
+            <img class="logo" src="@routes.Assets.versioned("images/logo-white.png")"/>
+        </div>
+    </section>
+
+<div id="content" class="wrapper doc">
+    <h1>Classroom Request</h1>
+    <p>
+        Welcome *professorname*. Please select your courses and preferred times/locations for them.
+    </p>
+    <div class="container">
+        <form action="post">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label class="col-sm-12 col-form-label">Course Name</label>
+                    <select class="col-sm-12 form-control">
+                        <option disabled>----- Anthropolgy -----</option>
+                        <option>Heritage: History and the Past Today – Anthropology – Uzi Baram – 20797</option>
+                        <option>History and Culture of Mesoamerica – Anthropology – Antony Andrews – 20904</option>
+                        <option>Introduction to African Studies – Anthropology – Erin Dean – 20799</option>
+                        <option>Urban Anthropolgy: Past, Present, and Future – Anthropology – Antony Andrews, Maria Vesperi – 20794</option>
+                        <option>Myth and Ritual: Anthropological Approaches to the Study of Religion – Anthropology – Maria Vesperi – 20811</option>
+                        <option>Race and Ethnicity in Global Perspective – Anthropology – Uzi Baram – 20796</option>
+                        <option>Anthropology of Food – Anthropology – Erin Dean – 20798</option>
+                        <option disabled>----- Art -----</option>
+                        <option>Drawing I – Art – Christine Comple – 20945</option>
+                        <option>Sculpture I – Art – Samatha Burns – 20883</option>
+                        <option>Painting II – Art – Kim Anderson – 20826</option>
+                        <option>Drawing II – Art – Kim Anderson – 20827</option>
+                        <option>Moldmaking and Casing – Art – Samtha Burns – 20882</option>
+                        <option>Art and Gender – Art History – Katherine Brion – 20831</option>
+                        <option>Saints and Sinners: Image, Gender, and Spirituality in the Medieval and Early Modern Eras – Art History – Magdalena Carrasco – 20830</option>
+                        <option>The Art of Natural History – Art History – David Berry – 20828</option>
+                        <option>Ways of Seeing:Theory and Methods in Art History – Art History – Katherine Brion, Magdalena Carrasco – 20829</option>
+                        <option disabled>----- Biology -----</option>
+                        <option>Plants and People – Biology – Brad Oberle – 20740</option>
+                        <option>Foundations of Biology II – Biology – Elizabeth Leininger – 20748</option>
+                        <option>Foundations of Biology II – Biology – Tyrone Reba – 20750</option>
+                        <option>Introduction to Entomology – Biology – Emily Saarinen – 20746</option>
+                        <option>Introduction to Entomology Laboratory – Biology – Emily Saarinen – 20747</option>
+                        <option>Introduction to Coastal Marine Systems  – Biology – Sandra Gilchrist – 20745</option>
+                        <option>Neurobiology Laboratory – Biology – Elizabeth Leininger – 20749</option>
+                        <option>Invertebrate Zoology – Biology – Sandra Gilchrist – 20744</option>
+                        <option>Topics in Genomics – Biology – Tyrone Reba – 20901</option>
+                        <option>Stress Management and Resilience Treatment – Biology – Stephen Harlin – 20929</option>
+                        <option>Plant Physiology  – Biology – Amy Clore – 20742</option>
+                        <option>Plant Physiology  – Biology – Amy Clore – 20743</option>
+                        <option>Organismic Biology – Biology – Tiffany Doan – 20738</option>
+                        <option>Organismic Biology Laboratory – Biology – Tiffany Doan – 20739</option>
+                        <option>Research Methods in Biology – Biology – Brad Oberle – 20741</option>
+                        <option>Chemistry and the Environment – Chemistry – Suzanne Sherman – 20903</option>
+                        <option disabled>----- Chemistry -----</option>
+                        <option>General Chemistry II – Chemistry – Suzanne Sherman – 20825</option>
+                        <option>General Chemistry II Laboratory – Chemistry – Mathis Hodge – 20822</option>
+                        <option>General Chemistry II Laboratory – Chemistry – Mathis Hodge – 20823</option>
+                        <option>General Chemistry II Laboratory – Chemistry  – Mathis Hodge – 80824
+                        <option>Organic Chemistry II: Structure and Reaction – Chemistry – Paul Scudder – 20751</option>
+                        <option>Organic Chemistry Laboratory – Chemistry – James Pavlik – 20752</option>
+                        <option>Organic Chemistry Laboratory – Chemistry – James Pavlik – 20753</option>
+                        <option>Biochemistry II: Metabolism & Advanced Topics  – Chemistry – Katherine Walstrom0 – 20754</option>
+                        <option>Biochemistry II Laboratory – Chemistry – Matthew Thomas – 20755</option>
+                        <option>Physical Chemistry: Quantum Mechanics – Chemistry – Steven Shipman – 20756</option>
+                        <option>Physical Chemistry Laboratory – Chemistry – Steven Shipman – 20756</option>
+                        <option disabled>----- Chinese -----</option>
+                        <option>First Year Modern Chinese II – Chinese – Fang-yu Li – 20832</option>
+                        <option>Second Year Modern Chinese II – Chinese – Fang-yu Li – 20833</option>
+                        <option>Third Year Chinese II – Chinese – Fang-yu Li – 20834</option>
+                        <option disabled>----- Classics -----</option>
+                        <option>Elementary Ancient Greek II – Classics – Carl Shaw – 20837</option>
+                        <option>Elementary Latin II – Classics – Michael Goyette – 20836</option>
+                        <option>Transformations of Gender, from Ancient Greece to the 21st Century – Classics – Michael Goyette – 20900</option>
+                        <option>Advanced Greek II: Plato's Symposium – Classics – Carl Shaw – 20838</option>
+                        <option>Advanced Latin: Ovid, Metamorphoses – Classics – Michael Goyette – 20835</option>
+                        <option disabled>----- Computer Applications -----</option>
+                        <option>Statistical Inference for Data Science II – Computer Applications – Mine Dogucu – 20733</option>
+                        <option>Distributed Computing for Data Science – Computer Applications – Matthew Lepinski – 20736</option>
+                        <option>Data Visualization. Presentation, Reporting, and Reproducible Research – Computer Applications – Melissa Crow – 20735</option>
+                        <option>Optimization and Machine Learning – Computer Applications – Gary Kalmonavich – 20734</option>
+                        <option>Practicum – Computer Applications – Patrick McDonald – 20737</option>
+                        <option disabled>----- Computer Science -----</option>
+                        <option>Object-Oriented Programming – Computer Science – David Gillman – 20760</option>
+                        <option>Databasese and Web Applications  – Computer Science – Matthew Lepinski – 20764</option>
+                        <option>Functional Problem Solving with Scheme – Computer Science – John Doucette – 20759</option>
+                        <option>Natural Language Processing – Computer Science – David Gillman – 20761</option>
+                        <option>Software Engineering  – Computer Science – John Doucette – 20758</option>
+                        <option>Data Visualization and Communication – Cpmputer Science – Melissa Crow – 20762</option>
+                        <option>Topics in Algorithms – Computer Science – Gary Kalmonavich – 20911</option>
+                        <option disabled>----- Economics -----</option>
+                        <option>Introductory Macroecoomics – Economics – Sherry Yu – 20788</option>
+                        <option>Introductural to Behavioral Economics – Economics – Tracy Collins – 20890</option>
+                        <option>Introduction to International Business – Economics – Tracy Collins – 20891</option>
+                        <option>Chinese Economy – Economics – Sherry Yu – 20789</option>
+                        <option>International Economics – Economics – Tarron Khemraj – 20892</option>
+                        <option>Intermediate Macroeconomics – Economics – Rochard Coe – 20815</option>
+                        <option>Econometrics – Economics – Tarron Khemraj – 20893</option>
+                        <option disabled>----- English -----</option>
+                        <option>Poetry, Performance, and International Politics – English – TBA – 21316
+                        <option>Canon of British Literature – English – Miriam Wallace, Nova Myhill – 20844</option>
+                        <option>Modern American Literature – English – Sarah Osment – 20843</option>
+                        <option>Woolf/Joyce – English – Miriam Wallace – 20896</option>
+                        <option>Medieval Romance – English – Nova Myhill – 20846</option>
+                        <option>American Masculinities – English – Andrea Dimino – 20840</option>
+                        <option>Toni Morrison and Intertexuality – English – Andrea Dimino – 20841</option>
+                        <option>Ecopoectics – English – Sarah Osment – 20842</option>
+                        <option>Genre Writing: Popular Fiction from Horror to Science Fiction and Beyond – English – Kurt Fawver – 20925</option>
+                        <option>Introduction to Horror Literature – English – Kurt Fawver – 20926</option>
+                        <option>Modernisms/Moderninties – English – Sarah Osment – 20845</option>
+                        <option disabled>----- Environmental Studies -----</option>
+                        <option>Environmental Studies Capstone – Environmental Studies – Heidi Harley – 20793</option>
+                        <option disabled>----- French -----</option>
+                        <option>Beginning French II – French – Vesna Petrovich – 20884</option>
+                        <option>Intermediate French II – French – Amy Reid – 20847</option>
+                        <option>Contes es conteurs – French – Amy Reid – 20848</option>
+                        <option>18th Century French Literature – French – Jocelyn Van Tuyl – 20849</option>
+                        <option disabled>----- German -----</option>
+                        <option>Elementary German II – German – Frank Chaich – 20916</option>
+                        <option>Intermediate German II – German – Frank Chaich – 20851</option>
+                        <option>Advanced German: Berlin Metropolis: Stadt as Text – German – Wendy-Lou Sutherland – 20852</option>
+                        <option disabled>----- Hebrew -----</option>
+                        <option>Elementary Hebrew  – Hebrew – Shoshana Marcus – 20855</option>
+                        <option disabled>----- History -----</option>
+                        <option>Historical Methods – History – David Harvey – 20803</option>
+                        <option>The World Since 1870: Topics and Themes in Modern World History – History – Xia Shi – 20786</option>
+                        <option>American History Survey - 1865 to Presents – History – Brendan Goff – 20899</option>
+                        <option>The Viking Age – History – David DiTucci – 20917</option>
+                        <option>Contemporary French History – History – David Harvey – 20802</option>
+                        <option>The Age of Openess: China Before Mao – History – Xia Shi – 20787</option>
+                        <option>US-Carribean Relations – History – Brendan Goff – 20898</option>
+                        <option disabled>----- Interdisciplinary -----</option>
+                        <option>Mathematics for Social Sciences  – Interdisciplinary – Travis Lee – 20918</option>
+                        <option disabled>----- Literature -----</option>
+                        <option>Mirror, Mirror on the Wall: Snow White in Text and FiIm – Literature – Wendy-Lou Sutherland – 20915</option>
+                        <option>Children's and Young Adult Literature: Contemporary Issues – Literature – Jocelyn Van Tuyl – 20912</option>
+                        <option disabled>----- Math -----</option>
+                        <option>Linear Algebra  – Math – Eirini Poimenidou – 20768</option>
+                        <option>Basic Set Theory – Math – Karsten Hencknell – 20773</option>
+                        <option>Number Theory – Math – Patrick McDonald – 20766</option>
+                        <option>Calculus I – Math – Mariya Ivanova – 20946</option>
+                        <option>Calculus with Theory II – Math  – EIrini Poimenidou – 20767</option>
+                        <option>Introduction to Numerical Methods – Math – Necemettin Yildrim – 20772</option>
+                        <option>Calculus II – Math – Patrick McDonald – 20765</option>
+                        <option>Advanced Set Theory II – Math  – Karsten Hencknell – 20744</option>
+                        <option>Automoata Theory – Math – Karsten Hencknell – 20775</option>
+                        <option>Real Analysis II – Math  – Christopher Kotke – 20770</option>
+                        <option>Partical Differential Equations – Math – Christopher Kotke – 20769</option>
+                        <option>Mathematical Modeling – Math – Necemettin Yildrim – 20771</option>
+                        <option>Mathematics Seminar – Math – Karsten Hencknell, Christopher Kottke, Patrick McDonald, Eirini Poimenidou, Necmettin Yildrim – 20902</option>
+                        <option disabled>----- Music -----</option>
+                        <option>Introduction to Music – Music – Maribeth Clark – 20858</option>
+                        <option>Western Art Tradition – Music  – Maribeth Clark – 20858</option>
+                        <option>New College Chorus – Music  – Virginia Puckett Bray – 20861</option>
+                        <option>Keyboard Skills – Music – Virginia Puckett Bray – 20862</option>
+                        <option>Urban Dance Technique – Music – Leymis Wilmott – 20885</option>
+                        <option>Beginning/Intermediate Ballet  – Music – Christopher Hird – 20942</option>
+                        <option>Chamber Music Group – Music – Nathan Frantz – 20923</option>
+                        <option>Music Theory II – Music – Kye Ryung Park – 20859</option>
+                        <option>Modern Dance and Performance – Music – Leymis Wilmott – 20856</option>
+                        <option>Electronic Music – Music – Kye Ryung Park – 20860</option>
+                        <option disabled>----- Philosophy -----</option>
+                        <option>Language and Politics – Philosophy – April Flakne – 20867</option>
+                        <option>Philosophy of Science – Philosophy – Aron Edidin – 20863</option>
+                        <option>Philosophy of Music – Philosophy – Aron Edidin – 20864</option>
+                        <option>Classical Philosophy – Philosophy – Douglas Langston – 20865</option>
+                        <option>Seminar: Kant's Critque of Pure Reason – Philosophy – April Flakne – 20866</option>
+                        <option>Descriptive Astronomy – Physics – George Ruppeiner – 20782</option>
+                        <option>Physics II – Physics – Mariana Sendova – 20777</option>
+                        <option disabled>----- Physics -----</option>
+                        <option>Physics II Laboratory – Physics – Christine Pennise – 20778</option>
+                        <option>Physics II Laboratory – Physics – Christine Pennise – 20779</option>
+                        <option>Physics II Laboratory – Physics – Christine Pennise – 20780</option>
+                        <option>Analog Electronics  – Physics – George Ruppeiner – 20781</option>
+                        <option>Modern Physics Laboratory – Physics – Mariana Sendova – 20776</option>
+                        <option>Honors Physics II – Physics – Donald Colladay – 20784</option>
+                        <option>Quantum Mechanics – Physics – Donald Colladay – 20783</option>
+                        <option>Comparative Politics – Political Science – Barbara Hicks – 20816</option>
+                        <option>Introduction to Political Theory – Political Science – Kieth Fitzgerald – 20818</option>
+                        <option>Governing the Marine Environment – Political Science – Frank Alcock – 20819</option>
+                        <option>New College in Tallahassee: Florida Politics and Government  – Political Science – Kieth Fitzgerald – 20921</option>
+                        <option>Politics of Russia – Political Science – Barbara Hicks – 20817</option>
+                        <option>Research Design Workshop in Political Science – Political Science – Jack Reilly – 20806</option>
+                        <option>Power and Public Policy in the U.S. – Political Science – Kieth Fitzgerald – 20820</option>
+                        <option>New College in Tallahassee: Practicum – Political Science – Kieth Fitzgerald – 20922</option>
+                        <option>International Law & Politics – Political Science – Frank Alcock – 20821</option>
+                        <option>Advanced Seminar: Social Networks and the Context of Political Behavior – Political Science – Jack Reilly – 20919</option>
+                        <option>Ecol Valid Study Design – Psychology – Peter Cook – 20805</option>
+                        <option>Personality Psychology – Psychology – Steven Graham – 20889</option>
+                        <option>Cognitive Psychology – Psychology – Heidi Harley – 20792</option>
+                        <option>Industrial and Organizational Psychology  – Psychology – Catherine Cottrell – 20809</option>
+                        <option>Cognitive Neuroscience – Psychology – Peter Cook – 20804</option>
+                        <option>Close Relationships  – Psychology – Steven Graham – 20888</option>
+                        <option>Research Methods in Psychology – Psychology – Michelle Barton – 20813</option>
+                        <option>Laboratory in Social and Personality Psychology – Psychology – Catherine Cottrell – 20808</option>
+                        <option>Writing for Advanced Social Psychology Research – Psychology – Catherine Cottrell – 20810</option>
+                        <option>Psychology Senior Seminar – Psychology – Heidi Harley, Michelle Barton, Peter Cook, Catherine Cottrell, Steven Graham – 20814</option>
+                        <option>Varieties of Religious Existentialism  – Religion – Gordon Michalson – 20873</option>
+                        <option>Japanese Religions – Religion – Manuel Antonio Lopez Zafra – 20870</option>
+                        <option>God(s) – Religion – Manuel Antonio Lopez Zafra – 20869</option>
+                        <option>Jewish Scriptures  – Religion – Susan Marks – 20871</option>
+                        <option>Judaism and Ecology  – Religion – Susan Marks – 20872</option>
+                        <option>Philisophy of Religion – Religion – Douglas Langston – 20868</option>
+                        <option>Faith and Reason – Religion – Gordon Michalson – 20874</option>
+                        <option>Religion and the Forms of Rationality – Religion – Gordon Michalson – 20887</option>
+                        <option>Intermediate Russian II – Russian – Alina Wyman – 20875</option>
+                        <option>The Russian Short Story  – Russian – Alina Wyman – 20876</option>
+                        <option>Envrionmental Sociology – Sociology – David Brain – 20800</option>
+                        <option>Social Inequality: Race, Class, Gender, and Power  – Sociology – Queen Zabriske – 20943</option>
+                        <option>Cultural Politics and Performance in the African Diaspora – Sociology – Queen Zabriske – 20944</option>
+                        <option>Space, Place, and Community – Sociology – David Brain – 20801</option>
+                        <option>Sociology of Development – Sociology – Sarah Hernandex – 20894</option>
+                        <option>Identity, Impression Management, and the Self – Sociology – Emily Fairchild – 20791</option>
+                        <option>Work Orgnization and its Alternatives – Sociology – Sarah Hernandex – 20895</option>
+                        <option>Queer Studies  – Sociology – Emily Fairchild – 20790</option>
+                        <option>Elementary Spanish II – Spanish – Mariam Manzur-Leiva – 20877</option>
+                        <option>Spanish-American Societies Through Film – Spanish – Sonia Labrador-Rodriguez – 20947</option>
+                        <option>Advanced Spanish: Spanish American Novella – Spanish – Sonia Labrador-Rodriguez – 20897</option>
+                        <option>Spanish Oral and Written Expression – Spanish – Mariam Manzur-Leiva – 20879</option>
+                        <option>Lecturas Hispanics – Spanish – Sonia Labrador-Rodriguez – 20924</option>
+                        <option>Introductions to Statistics – Statistics – Robin Cooper – 20785</option>
+                        <option>Dealing with Data I – Statistics – Mine Dogucu – 20948</option>
+                        <option>The Viewpoints: An In-depth Study of Strategics for Composition & Improvisation – Theater – Eliza Schwarz – 20928</option>
+                        <option>Acting II – Theater – Andrei Malaev – 20880</option>
+                        <option>Theatrical Adaptation – Theater – Andrei Malaev – 20881</option>
+                        <option>Writing Studies: Writing about Writing – Writing – Avni Vyas – 20909</option>
+                        <option>Writing Studies: Writing about Writing for Natural Sciences Students – Writing – Avni Vyas – 20910</option>
+                        <option>Pedagogy in Practice – Writing – Alexandra Maass – 20905</option>
+                        <option>Writing with Communities and Nonprofits – Writing – Jennifer Wells – 20907</option>
+                        <option>Scientific Writing – Writing – Avni Vyas – 20908</option>
+                        <option>Advanced Research Writing  – Writing – Jennifer Wells – 20906</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <label class="col-sm-12 col-form-label">Course Time</label>
+                    <select class="col-sm-12 form-control">
+                        <option disabled>----- 3 Days a Week -----</option>
+                        <option>MWF 8:00-8:50</option>
+                        <option>MWF 9:00-9:50</option>
+                        <option>MWF 10:00-10:50</option>
+                        <option>MWF 11:00-11:50</option>
+                        <option disabled>----- 2 Days a Week -----</option>
+                        <option>MW 7:00-8:20</option>
+                        <option>MR 12:30-1:50</option>
+                        <option>MR 2:00-3:20</option>
+                        <option>MR 3:30-4:50</option>
+                        <option>TF 1:00-2:20</option>
+                        <option>TF 2:30-3:50</option>
+                        <option>TF 4:00-5:20</option>
+                        <option disabled>----- 1 Day a Week -----</option>
+                        <option>M 7:00-9:50</option>
+                        <option>T 7:00-9:50</option>
+                        <option>W 7:00-9:50</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 offset-sm-10">
+                    <input class="col-sm-12 btn btn-primary btn-submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+}
