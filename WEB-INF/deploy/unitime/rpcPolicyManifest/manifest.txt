@@ -1,0 +1,7 @@
+# Module unitime
+# RPC service class, partial path of RPC policy file
+org.unitime.timetable.gwt.services.LimitAndProjectionSnapshotService, 20B8AE83E969DD622FC5E2925B205DE6.gwt.rpc
+org.unitime.timetable.gwt.services.CurriculaService, 7F4620BBAB51AB5C3F1DF8CE059BA3DE.gwt.rpc
+org.unitime.timetable.gwt.command.client.GwtRpcService, 2E30AA165F8E67184134F25CDE51412C.gwt.rpc
+org.unitime.timetable.gwt.services.ReservationService, 61F0180A1F2857B19BCDEB9AB32B4C52.gwt.rpc
+org.unitime.timetable.gwt.services.SectioningService, 6319CE0AADCFFC209F9F6EC4057D4C4D.gwt.rpc

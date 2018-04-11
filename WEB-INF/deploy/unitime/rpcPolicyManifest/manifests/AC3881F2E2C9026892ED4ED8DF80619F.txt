@@ -1,0 +1,2 @@
+serviceClass: org.unitime.timetable.gwt.command.client.GwtRpcService
+path: 2E30AA165F8E67184134F25CDE51412C.gwt.rpc
