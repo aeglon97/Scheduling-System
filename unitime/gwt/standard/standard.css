@@ -218,7 +218,8 @@ a, a:visited, a:hover {
   cursor: default;
 }
 .gwt-MenuBar .gwt-MenuItem-selected {
-  background: #E0EDFE;
+  background: #164d80;
+  color: #fff !important;
 }
 .gwt-MenuBar .gwt-MenuItem-disabled {
   color: #c0c0c0;
@@ -236,7 +237,7 @@ a, a:visited, a:hover {
 .gwt-MenuBar-horizontal .gwt-MenuItem:hover {
   color: #2070ba;
   cursor: pointer;
-  background: #fff;
+  background: #164d80;
 }
 .gwt-MenuBar-horizontal .gwt-MenuItemSeparator {
   width: 1px;
@@ -262,6 +263,7 @@ a, a:visited, a:hover {
 .gwt-MenuBar-vertical .gwt-MenuItem {
   padding: 10px;
   color: #2070ba;
+  cursor: pointer;
 }
 .gwt-MenuBar-vertical .gwt-MenuItemSeparator {
   padding: 2px 0px;
@@ -280,7 +282,7 @@ a, a:visited, a:hover {
 .gwt-MenuBar-vertical .subMenuIcon-selected {
   background: #E0EDFE;
 }
-.gwt-MenuBarPopup .menuPopupTopCenter {
+/* .gwt-MenuBarPopup .menuPopupTopCenter {
   background: url(images/hborder.png) 0px -12px repeat-x;
 }
 .gwt-MenuBarPopup .menuPopupBottomCenter {
@@ -291,7 +293,8 @@ a, a:visited, a:hover {
 }
 .gwt-MenuBarPopup .menuPopupMiddleRight {
   background: url(images/vborder.png) -13px 0px repeat-y;
-}
+} */
+
 .gwt-MenuBarPopup .menuPopupTopLeftInner {
   width: 5px;
   height: 5px;
@@ -312,7 +315,7 @@ a, a:visited, a:hover {
   height: 8px;
   zoom: 1;
 }
-.gwt-MenuBarPopup .menuPopupTopLeft {
+/* .gwt-MenuBarPopup .menuPopupTopLeft {
   background: url(images/corner.png) no-repeat 0px -36px;
 }
 .gwt-MenuBarPopup .menuPopupTopRight {
@@ -323,7 +326,7 @@ a, a:visited, a:hover {
 }
 .gwt-MenuBarPopup .menuPopupBottomRight {
   background: url(images/corner.png) no-repeat -5px -41px;
-}
+} */
 
 .gwt-PasswordTextBox {
   padding: 2px;

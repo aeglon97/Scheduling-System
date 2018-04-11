@@ -2512,6 +2512,8 @@ A.unitime-Hint:link,A.unitime-Hint:visited,A.unitime-Hint:active,A.unitime-Hint:
 
 div.gwt-MenuBarPopup {
 	z-index: 1000000;
+	border: 1px solid #2070ba;
+	background: #fff;
 }
 
 .unitime-EventContacts {
