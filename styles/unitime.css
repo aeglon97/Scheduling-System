@@ -1781,12 +1781,13 @@ A.unitime-Hint:link,A.unitime-Hint:visited,A.unitime-Hint:active,A.unitime-Hint:
 	border: 1px solid #9CB0CE;
 	padding: 0px;
 	width: 560px;
-	height: 100%;
+	height: 35px;
 	font-family: Verdana, sans-serif;
 	font-size: 8pt;
 	font-weight: 400;
 	font-style: normal;
 	color: #333333;
+	border-radius: 3px;
 }
 
 .unitime-FilterBoxFocus {
@@ -1801,6 +1802,7 @@ A.unitime-Hint:link,A.unitime-Hint:visited,A.unitime-Hint:active,A.unitime-Hint:
 
 .unitime-FilterBox .filter {
 	border: none;
+	border-radius: 3px;
 	position: relative;
 	display: -moz-inline-box;
 	display: inline-block;
@@ -1808,7 +1810,7 @@ A.unitime-Hint:link,A.unitime-Hint:visited,A.unitime-Hint:active,A.unitime-Hint:
 	margin-top: 1px;
 	padding: 0px 0px 0px 2px;
 	min-width: 100px;
-	height: 20px;
+	height: 32px;
 	font-family: Verdana, sans-serif;
 	font-size: 8pt;
 	font-weight: 400;
@@ -1859,14 +1861,14 @@ A.unitime-Hint:link,A.unitime-Hint:visited,A.unitime-Hint:active,A.unitime-Hint:
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
-	padding: 2px;
+	padding: 5px;
 	position: relative;
 	display: -moz-inline-box;
 	display: inline-block;
 }
 
 .unitime-FilterBox .chip .text {
-	font-size: x-small;
+	font-size: larger;
 	position: relative;
 	display: -moz-inline-box;
 	display: inline-block;
@@ -3254,9 +3256,28 @@ unitime-RoomSharingWidget .legend .blank {
 	color: #9CB0CE;
 }
 
-.gwt-Button {
+.gwt-Button, input[type="button"], input[type="submit"] {
 	white-space: nowrap;
-	height: 25px;
+	height: 35px;
+	background: #2070ab !important;
+	color: #fff;
+	border: 1px solid #2070ab !important;
+	border-radius: 3px;
+	margin: 0 3px;
+	padding: 3px 10px !important;
+}
+
+.gwt-Button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+	background: #fff !important;
+	color: #2070ab !important;
+	border: 1px solid #2070ab;
+}
+
+.gwt-Button[disabled], input[type="button"][disabled], input[type="submit"][disabled]{
+    cursor: default;
+    color: #888;
+    background: #444;
+    border-color: #444;
 }
 
 .unitime-TimeGrid .unavailability {
@@ -3689,8 +3710,11 @@ unitime-RoomSharingWidget .legend .blank {
 .unitime-PageLoading {
 	display: block;
 	text-align: center;
-	font-style: italic;
 	margin-bottom: 10px;
+	background: none;
+	font-family: Lato;
+	font-size: 16px;
+	color: #2070ab;
 }
 
 .unitime-Header {
@@ -3699,7 +3723,7 @@ unitime-RoomSharingWidget .legend .blank {
 }
 
 .unitime-Login {
-	margin: 20px 5px 20px 5px;
+	margin: 60px 5px 20px 5px;
 	display: block;
 	text-align: center;
 }
@@ -3734,7 +3758,7 @@ unitime-RoomSharingWidget .legend .blank {
 
 .unitime-Login .login {
 	display: block;
-	padding: 10px 0px 10px 0px;
+	padding: 40px 0px 10px 0px;
 }
 
 .unitime-Login .forgot {

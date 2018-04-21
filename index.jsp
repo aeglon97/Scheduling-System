@@ -16,7 +16,7 @@
  *
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
 --%>
 <%@ page language="java" pageEncoding="utf-8" contentType="text/html;charset=utf-8" errorPage="/error.jsp"%>
 <%@ page import="org.unitime.timetable.ApplicationProperties" %>
@@ -28,13 +28,13 @@
 	    <meta charset="UTF-8"/>
 	    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<% if (!sessionContext.isAuthenticated()) {%>
-		<META http-equiv="Refresh" content="1; url=login.do">	
-		<% } else { %>	
-		<META http-equiv="Refresh" content="1; url=selectPrimaryRole.do">	
+		<META http-equiv="Refresh" content="1; url=login.do">
+		<% } else { %>
+		<META http-equiv="Refresh" content="1; url=selectPrimaryRole.do">
 		<% } %>
 		<LINK rel="stylesheet" type="text/css" href="styles/timetabling.css">
 		<link rel="shortcut icon" href="images/timetabling.ico" />
-		<TITLE>UniTime <%=Constants.VERSION%>| University Timetabling Application</TITLE>
+		<TITLE>New College of Florida <%=Constants.VERSION%>| Class Scheduling System</TITLE>
 	</HEAD>
 	<BODY>
 		<% if (ApplicationProperties.getProperty("tmtbl.header.external", "").trim().length()>0) { %>

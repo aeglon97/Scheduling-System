@@ -55,8 +55,7 @@
 	<link type="text/css" rel="stylesheet" href="unitime/gwt/standard/standard.css">
     <link type="text/css" rel="stylesheet" href="styles/unitime.css">
     <link type="text/css" rel="stylesheet" href="styles/unitime-mobile.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!--[if IE]>
 	    <link type="text/css" rel="stylesheet" href="styles/unitime-ie.css">
     <![endif]-->
@@ -65,14 +64,13 @@
     	<link rel="stylesheet" type="text/css" href="%tmtbl.custom.css%" />
     </tt:hasProperty>
     <link rel="shortcut icon" href="images/timetabling.ico" />
-
 	<title>UniTime <%=Constants.VERSION%>| <tiles:getAsString name="title" /></title>
     <script language="JavaScript" type="text/javascript" src="scripts/loading.js"></script>
 	<script language="JavaScript" type="text/javascript" src="scripts/rtt.js"></script>
 	<script type="text/javascript" language="javascript" src="unitime/unitime.nocache.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
 <body class="unitime-Body" <tiles:getAsString name="onLoadFunction" />>
 	<loc:bundle name="org.unitime.timetable.gwt.resources.GwtMessages" id="GWTMSG">
@@ -88,19 +86,19 @@
     <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex="-1" style="position:absolute;width:0;height:0;border:0"></iframe>
     <iframe src="javascript:''" id="__printingFrame" tabIndex="-1" style="position:absolute;width:0;height:0;border:0"></iframe>
 
-    <div class='top-menu'>
+    <span class='top-menu'>
     <logic:equal name="showMenu" value="true">
     	<tt:notHasProperty name="unitime.menu.style" user="true">
-	    	<div id='UniTimeGWT:DynamicTopMenu' style="display: block; height: 50px;"></div>
+	    	<span id='UniTimeGWT:DynamicTopMenu' style="display: block; height: 23px;"></span>
     	</tt:notHasProperty>
     	<tt:propertyEquals name="unitime.menu.style" user="true" value="Dynamic On Top">
-    		<div id='UniTimeGWT:DynamicTopMenu' style="display: block; height: 50px;"></div>
+    		<span id='UniTimeGWT:DynamicTopMenu' style="display: block; height: 23px;"></span>
     	</tt:propertyEquals>
     	<tt:propertyEquals name="unitime.menu.style" user="true" value="Static On Top">
-    		<div id='UniTimeGWT:TopMenu' style="display: block; height: 50px;"></div>
+    		<span id='UniTimeGWT:TopMenu' style="display: block; height: 23px;"></span>
     	</tt:propertyEquals>
     </logic:equal>
-    </div>
+    </span>
 
     <tt:hasProperty name="tmtbl.global.info">
     	<div class='unitime-PageMessage'><tt:property name="tmtbl.global.info"/></div>
@@ -136,26 +134,26 @@
 			<div class='sidebar' id="unitime-SideMenu">
 		    	<logic:equal name="showMenu" value="true">
 		    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Stack On Side">
-		    			<div id='UniTimeGWT:SideStackMenu' style="display: block;" ></div>
+		    			<span id='UniTimeGWT:SideStackMenu' style="display: block;" ></span>
 			    	</tt:propertyEquals>
 		    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Tree On Side">
-		    			<div id='UniTimeGWT:SideTreeMenu' style="display: block;" ></div>
+		    			<span id='UniTimeGWT:SideTreeMenu' style="display: block;" ></span>
 			    	</tt:propertyEquals>
 		    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Static Stack On Side">
-		    			<div id='UniTimeGWT:StaticSideStackMenu' style="display: block;" ></div>
+		    			<span id='UniTimeGWT:StaticSideStackMenu' style="display: block;" ></span>
 				    </tt:propertyEquals>
 		    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Static Tree On Side">
-		    			<div id='UniTimeGWT:StaticSideTreeMenu' style="display: block;" ></div>
+		    			<span id='UniTimeGWT:StaticSideTreeMenu' style="display: block;" ></span>
 				    </tt:propertyEquals>
 		    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Dynamic Stack On Side">
-		    			<div id='UniTimeGWT:SideStackMenu' style="display: block;" ></div>
+		    			<span id='UniTimeGWT:SideStackMenu' style="display: block;" ></span>
 				    </tt:propertyEquals>
 		    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Dynamic Tree On Side">
-		    			<div id='UniTimeGWT:SideTreeMenu' style="display: block;" ></div>
+		    			<span id='UniTimeGWT:SideTreeMenu' style="display: block;" ></span>
 				    </tt:propertyEquals>
 			    </logic:equal>
 			    <script language="JavaScript" type="text/javascript">
-			    	var sideMenu = document.getElementById("unitime-SideMenu").getElementsByTagName("div");
+			    	var sideMenu = document.getElementById("unitime-SideMenu").getElementsByTagName("span");
 			    	if (sideMenu.length > 0) {
 			    		var c = unescape(document.cookie);
 			    		var c_start = c.indexOf("UniTime:SideBar=");
@@ -172,53 +170,54 @@
 			    	}
 			    </script>
 			</div>
-		    <div class='main'>
-				<div class='body container' id="unitime-Page">
+		    <div class='container'>
+				<div class='body' id="unitime-Page">
 			    	<div class="unitime-PageHeader" id="unitime-Header">
 			    		<div class="row">
-			    			<div class="mobile-menu-button" id='UniTimeGWT:MobileMenuButton'></div>
+			    			<span class="mobile-menu-button" id='UniTimeGWT:MobileMenuButton'></span>
 			    			<a href='main.jsp' tabIndex="-1" class="logo"></a>
-			    			<div class="content">
-								<div id='UniTimeGWT:Title' class="title"><bean:write name="title" scope="request"/></div>
+			    			<span class="content">
+								<span id='UniTimeGWT:Title' class="title"><bean:write name="title" scope="request"/></span>
 								<logic:equal name="showMenu" value="true">
-									<div class='unitime-Header'><div id='UniTimeGWT:Header' class="unitime-InfoPanel"></div></div>
+									<span class='unitime-Header'><span id='UniTimeGWT:Header' class="unitime-InfoPanel"></span></span>
 								</logic:equal>
-				    			<div id='UniTimeGWT:TitlePanel' class='navigation'>
+				    			<span id='UniTimeGWT:TitlePanel' class='navigation'>
 				    				<tiles:insert attribute="header">
 				    					<tiles:put name="showNavigation" value="${showNavigation}"/>
 									</tiles:insert>
-								</div>
-							</div>
+								</span>
+							</span>
 						</div>
 					</div>
-					<div class="mobile-menu" id='UniTimeGWT:MobileMenuPanel'></div>
+					<span class="mobile-menu" id='UniTimeGWT:MobileMenuPanel'></span>
 					<div class='content'>
-			        	<div id='UniTimeGWT:Content'>
+			        	<span id='UniTimeGWT:Content'>
 				    		<tiles:insert attribute="body">
 								<tiles:put name="body2" value="${body2}"/>
 								<tiles:put name="action2" value="${action2}"/>
 							</tiles:insert>
-			        	</div>
+			        	</span>
 			        </div>
 			    </div>
 				<div class='footer' id="unitime-Footer">
-					<div class="unitime-Footer container">
-						<div class="row">
-							<div class="cell left">
-								<div id='UniTimeGWT:Version'></div>
+					<span class="unitime-Footer">
+						<span class="row">
+							<span class="cell left">
+								<span id='UniTimeGWT:Version'></span>
 								<tt:time-stamp/>
-							</div>
+							</span>
 			    			<%-- WARNING: Changing or removing the copyright notice will violate the license terms. If you need a different licensing, please contact us at support@unitime.org --%>
-							<div class="cell middle"><tt:copy/></div>
-							<div class="cell right"><tt:registration/></div>
-						</div>
-					</div>
+							<span class="cell middle"><tt:copy/></span>
+							<span class="cell right"><tt:registration/></span>
+						</span>
+					</span>
 					<tt:hasProperty name="tmtbl.page.disclaimer">
-						<div class='unitime-Disclaimer'><tt:property name="tmtbl.page.disclaimer"/></div>
+						<span class='unitime-Disclaimer'><tt:property name="tmtbl.page.disclaimer"/></span>
 					</tt:hasProperty>
 				</div>
 			</div>
 		</div>
 	</div>
+
 </body>
 </html:html>

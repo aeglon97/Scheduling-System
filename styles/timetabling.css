@@ -15,7 +15,7 @@
  *
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
 */
 
 BODY {
@@ -1299,7 +1299,7 @@ A.sortHeader:link,A.sortHeader:visited,A.sortHeader,A.sortHeader:active,A.sortHe
 	*/
 	color: #FF0000;
 	font-size: 90%;
-	
+
 }
 
 div.suggestionList {
@@ -1314,10 +1314,10 @@ div.suggestionList {
 	font-family: sans-serif, verdana, arial;
 	z-index:500;
 	position:absolute;
-	width:150px; 
-	background-color:#ffffff; 
-	font-size:100%; 
-	cursor:default; 
+	width:150px;
+	background-color:#ffffff;
+	font-size:100%;
+	cursor:default;
 	visibility:hidden;
 }
 div.suggestionList_element_off {
@@ -1341,37 +1341,37 @@ div.suggestionList_element_on {
 .configTitle {
 	color: #006699;
 	font-weight: bold;
-	font-size:105%; 
+	font-size:105%;
 }
 
 .popupBlocked {
 	color: black;
 	background: #DFE7F2;
-	border-bottom: 1px black solid;	
+	border-bottom: 1px black solid;
 }
 
 .reqWarn {
 	color: black;
 	background: #FC9D89;
-	border-bottom: 1px black solid;	
+	border-bottom: 1px black solid;
 }
 
 .reqMsg {
 	color: black;
 	background: #DFE7F2;
-	border-bottom: 1px black solid;	
+	border-bottom: 1px black solid;
 }
 
 .reqGlobalWarn {
 	color: black;
 	background: #fcdd89;
-	border-bottom: 1px black solid;	
+	border-bottom: 1px black solid;
 }
 
 .reqField {
 	color: #FF0000;
 	font-weight: bold;
-	font-size:105%; 
+	font-size:105%;
 	font-family: arial, sans-serif, verdana;
 }
 
@@ -1393,8 +1393,19 @@ div.suggestionList_element_on {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/* custom login form styling */
+.loginForm {
+	height: 110px;
+	width: 354px;
+	margin-left: auto;
+	margin-right: auto;
+	/* background: #2070ba; */
+	border-radius: 5px;
+}
+
 #login label {
-	font: bold 15px Verdana, Arial, Helvetica, sans-serif;
+	font: 15px Lato, sans-serif;
 	color: #FFFFFF;
 	width: 150px;
 	float: left;
@@ -1402,37 +1413,50 @@ div.suggestionList_element_on {
 	padding-right: 5px;
 	padding-top: 3px;
 }
+
 #login .txtField {
 	float: left;
 	text-align: left;
 	padding-left: 5px;
 }
+
 #login input {
-	font: normal 13px Verdana, Arial, Helvetica, sans-serif;
+	font: normal 18px Lato, sans-serif;
 	background-color: #EFEFEF;
 	color: #660000;
-	width: 150px;
-	height: 23px;
-	border-top: 2px solid #7A6241;
-	border-right: 2px solid #CCB99E;
-	border-bottom: 2px solid #CCB99E;
-	border-left: 2px solid #7A6241;
-	padding: 1px;
+	width: 344px;
+    height: 45px;
+	border-top: 2px solid #2070ba;
+	border-right: 2px solid #2070ba;
+	border-bottom: 2px solid #2070ba;
+	border-left: 2px solid #2070ba;
+	padding: 3px 10px;
+	margin-bottom: 10px;
 	vertical-align: middle;
 }
+
 #login .bottom {
 	height: 46px;
 	width: 354px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #login .bottom input{
 	padding: 0px;
-	margin: 0px;
+	margin: 10px 0px;
 	border: none;
 	width: 104px;
 	height: 46px;
 	vertical-align: top;
+	background: #2070ba;
+	color: #fff;
+	border: 2px solid #2070ba;
+}
+
+#login .bottom input:hover {
+	color: #2070ba;
+	background: #fff;
 }
 
 .H20px {
