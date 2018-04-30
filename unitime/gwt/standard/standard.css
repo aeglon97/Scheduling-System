@@ -239,7 +239,7 @@ a, a:visited, a:hover {
   cursor: pointer;
   background: #164d80;
 }
-.gwt-MenuBar-horizontal .gwt-MenuItem:nth-child(2), .gwt-MenuBar-horizontal .gwt-MenuItem:nth-child(3), .gwt-MenuBar-horizontal .gwt-MenuItem:nth-child(4) {
+.gwt-MenuBar-horizontal .gwt-MenuItem:nth-child(2), .gwt-MenuBar-horizontal .gwt-MenuItem:nth-child(3), .gwt-MenuBar-horizontal .gwt-MenuItem:nth-child(4), .gwt-MenuBar-horizontal .gwt-MenuItem:nth-last-child(2) {
     display: none;
 }
 .gwt-MenuBar-horizontal .gwt-MenuItemSeparator {
