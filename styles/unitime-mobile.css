@@ -15,7 +15,7 @@
  *
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
 */
 .unitime-MobileNotifications {
 	display: block;
@@ -159,12 +159,19 @@
 }
 
 .unitime-MobileMenuButton {
-	font-size: large;
-	height: 32px;
-	width: 32px;
-	margin: 2px 4px 2px 4px;
-	vertical-align: middle;
-	text-align: center;
+    font-size: large;
+    /* height: 32px; */
+    /* width: 32px; */
+    margin: -5px 15px 0 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.gwt-StackPanel tr:nth-child(3), .gwt-StackPanel tr:nth-child(4),
+.gwt-StackPanel tr:nth-child(5), .gwt-StackPanel tr:nth-child(6),
+.gwt-StackPanel tr:nth-child(7), .gwt-StackPanel tr:nth-child(8),
+.gwt-StackPanel tr:nth-child(13), .gwt-StackPanel tr:nth-child(14) {
+	display: none;
 }
 
 @media all and (max-width: 800px) {
@@ -188,12 +195,12 @@
 		vertical-align: top;
 		padding-top: 10px;
 	}
-	
+
 	.unitime-Login .mobile-menu {
 		display: block;
 		padding: 5px;
 	}
-	
+
 	.unitime-Page .mobile-menu {
 		display: block;
 		width: 100vw;
@@ -203,114 +210,116 @@
 	.unitime-PageHeader {
 		width: 100vw;
 	}
-	
+
 	.unitime-PageHeader .logo {
 		display: table-cell;
 		background-image: url(../images/unitime-phone.png);
 		background-repeat: no-repeat;
 		background-position: 0px 3px;
-		background-size: 78px 48px;
-		width: 80px;
+		background-size: 150px;
+		/* width: 80px; */
 	}
-	
+
 	.unitime-PageHeader .mobile-menu-button {
 		display: table-cell;
 		vertical-align: top;
 		padding-top: 10px;
 		width: 40px;
 	}
-		
+
 	.unitime-PageHeader .content {
 		float: right;
 	}
-	
+
 	.unitime-PageHeader .title {
 		white-space: normal;
 	}
-	
+
 	.unitime-PageHeader .title .text {
 		white-space: normal;
+		font-size: 18px;
+    	text-align: center;
 	}
-	
+
 	.unitime-Page {
 		min-width: inherit;
 		width: 100%;
 	}
-	
+
 	.unitime-Page .body {
 		border: none;
 		margin-top: 0px;
 	}
-	
+
 	.unitime-Page .sidebar {
 		display: none;
 		padding: 0px 0px 0px 0px;
 	}
-	
+
 	.unitime-Page .footer {
 		max-width: calc(100vw - 4px);
 	}
-	
+
 	.top-menu {
 		display: none;
 	}
-	
+
 	.unitime-InfoPanel .row {
 		display: inline-table;
 	}
-	
+
 	.unitime-InfoPanel .cell {
 		display: inline-block;
 	}
-	
+
 	.unitime-Footer .row {
 		display: inline-table;
 		white-space: normal;
 		text-align: center;
 	}
-	
+
 	.unitime-Footer {
 		display: block;
 		text-align: center;
 		border-top: 1px solid #9CB0CE;
 		width: calc(100vw - 4px);
 	}
-	
+
 	.unitime-Footer .cell {
 		display: inline-block;
 		width: inherit;
 		min-width: 33vw;
 		padding-bottom: 2px;
 	}
-	
+
 	.unitime-Footer .left {
 		float: left;
 		padding-right: 20px;
 	}
-	
+
 	.unitime-Footer .right {
 		float: right;
 		padding-left: 20px;
 	}
-	
+
 	.unitime-CourseFinderDialog .filter {
 		width: 85vw;
 	}
-	
+
 	.unitime-CourseFinderDialog .course-table {
 		width: 90vw;
 		height: 30vh;
 	}
-	
+
 	.unitime-CourseFinderDialog .course-details {
 		width: 90vw;
 		height: 30vh;
 	}
-	
+
 	.unitime-CourseFinderDialog .free-time-picker {
 		width: 90vw;
 	}
-	
+
 	.unitime-CourseFinderDialog .unitime-Hint {
 		max-width: 90vw;
 		overflow: visible;
@@ -328,7 +337,7 @@
 		width: calc(99vw - 219px);
 		min-width: 100px;
 	}
-	
+
 	.unitime-CourseRequests .nowaitlist .line .course .unitime-FilterBox {
 		width: calc(99vw - 144px);
 	}
@@ -344,7 +353,7 @@
 	.unitime-CourseRequests .noarrows .alt-line .course .unitime-FilterBox {
 		width: calc(99vw - 159px);
 	}
-	
+
 	.unitime-CourseRequests .noarrowswaitlist .line .course .unitime-FilterBox {
 		width: calc(99vw - 89px);
 	}
@@ -356,7 +365,7 @@
 	.unitime-CourseRequests .tip {
 		white-space: normal;
 	}
-	
+
 	.unitime-CourseRequests .alt-header .title {
 		display: inline-block;
 	}
@@ -366,27 +375,27 @@
 		white-space: normal;
 		padding-left: 20px;
 	}
-	
+
 	.unitime-ClassScheduleTabPanel .unitime-ScrollPanel {
 		width: 95%;
 	}
-	
+
 	.unitime-ClassScheduleTabPanel {
 		width: calc(100vw - 4px);
 	}
-	
+
 	.unitime-SchedulingAssistantButtons {
 		width: calc(100vw - 4px);
 	}
-	
+
 	.unitime-SuggestionsBox .panel {
 		width: 90vw;
 	}
-	
+
 	.unitime-SuggestionsBox .unitime-ScrollPanel {
 		height: 70vh;
 	}
-	
+
 	.unitime-PeopleLookup .query {
 		width: 50vw;
 	}
@@ -395,16 +404,16 @@
 		width: 90vw;
 		height: 80vh;
 	}
-	
+
 	.unitime-SelectDegreePlan .plans-table {
 		min-width: 50vw;
 	}
-	
+
 	.unitime-DegreePlanDialog .plan {
 		width: 90vw;
 		height: 40vh;
 	}
-	
+
 	.unitime-DegreePlanDialog .unitime-TabPanel {
 		width: 90vw;
 		height: 30vh;
@@ -413,146 +422,146 @@
 	.unitime-Note {
 		max-width: 50px;
 	}
-	
+
 	.unitime-FilterBox {
 		width: inherit;
 	}
-	
+
 	.unitime-FilterBoxContainer {
 		width: 100%;
 	}
-	
+
 	.unitime-FilterBoxPopup .value {
 		width: 45%;
 	}
-	
+
 	.unitime-EventResults .unitime-IntervalSelector .selection {
 		width: 19vw;
 	}
-	
+
 	.unitime-EventResults .gwt-TabBarItem .gwt-HTML {
 		width: 12vw;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
-	
+
 	.unitime-EventResults .unitime-TabPanel {
 		border-left: none;
 		border-right: none;
 		width: 99vw;
 	}
-	
+
 	.unitime-MainTable .table-row {
 		width: calc(99vw - 8px);
 		min-width: 100%;
 	}
-	
+
 	.unitime-MainTable .table-cell {
 		max-width: 80vw;
 	}
-	
+
 	.unitime-MainTable .label-cell {
 		white-space: normal;
 		max-width: calc(19vw - 4px);
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
-	
+
 	.unitime-MainTable .widget-cell {
 		max-width: calc(80vw - 4px);
 	}
-	
+
 	.unitime-MainTable .widget-cell .unitime-TextBox {
 		max-width: calc(80vw - 4px);
 	}
-	
+
 	.unitime-MainTable .widget-cell textarea {
 		max-width: calc(80vw - 4px);
 	}
-	
+
 	.unitime-ApproveDialog .unitime-MainTable .table-row {
 		width: 90vw;
 	}
-	
+
 	.unitime-ApproveDialog .unitime-MainTable .table-cell {
 		max-width: 75vw;
 	}
-	
+
 	.gwt-DialogBox .unitime-MainTable .table-row {
 		width: inherit;
 	}
-	
+
 	.unitime-ApproveDialog .unitime-MainTable .label-cell {
 		white-space: normal;
 		max-width: 14vw;
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
-	
+
 	.unitime-ApproveDialog .unitime-MainTable .widget-cell {
 		max-width: 75vw;
 	}
-	
+
 	.unitime-ApproveDialog .standard-notes .gwt-ListBox {
 		width: 75vw;
 	}
-	
+
 	.unitime-StandardNotesBox .gwt-ListBox {
-		width: 90vw;	
+		width: 90vw;
 	}
-	
+
 	.unitime-RoomsPanel .scroll {
 		width: 99vw;
 	}
-	
+
 	.unitime-RoomDetail .map {
 		width: 100%;
 	}
-	
+
 	.unitime-RoomEdit .map {
 		width: 99vw;
 		max-width: 600px;
 	}
-	
+
 	.unitime-RoomEdit .groups .group {
 		width: 25vw;
 		min-width: 150px;
 	}
-	
+
 	.unitime-RoomEdit .features .feature {
 		width: 25vw;
 		min-width: 150px;
 	}
-	
+
 	.unitime-RoomEdit .exams .exam {
-		width: 37vw; 
+		width: 37vw;
 		min-width: 300px;
 	}
-	
+
 	.unitime-ScrollTable {
 		min-width: 100%;
 		width: calc(99vw - 8px);
 	}
-	
+
 	.unitime-ScrollTableCell {
 		width: 80vw;
 	}
-	
+
 	.unitime-LegacyWebTable {
 		min-width: 100%;
 		width: calc(100vw - 8px);
 	}
-	
+
 	.unitime-CurriculumProjectionRulesDialog .unitime-ScrollTable {
 		min-width: inherit;
 		width: 80vw;
 	}
-	
+
 	.unitime-FilterPanel .filter-left .unitime-FilterBox {
 		width: calc(99vw - 8px);
 	}
-	
+
 	.unitime-ScheduleStatus {
 		width: calc(100vw - 4px);
 	}

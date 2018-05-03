@@ -127,20 +127,20 @@
             </script>
     	</div>
         <div class='container'>
-            <div class='body' id="unitime-Page" style="background-image:url('images/logofaded.jpg');backbackground-repeat:no-repeat;background-position: center;">
-            	<div class="unitime-PageHeader" id="unitime-Header">
-            		<div class="row">
-            			<span class="mobile-menu-button" id='UniTimeGWT:MobileMenuButton'></span>
-            			<a href='main.jsp' tabIndex="-1" class="logo"></a>
-            			<span class="content">
-        					<span id='UniTimeGWT:Title' class="title">New College of Florida - Class Scheduling System</span>
-        					<span class='unitime-Header'><span id='UniTimeGWT:Header' class="unitime-InfoPanel"></span></span>
-        				</span>
-        			</div>
+            <div class='body row' id="unitime-Page" style="background-image:url('images/logofaded.jpg');backbackground-repeat:no-repeat;background-position: center;">
+            	<div class="col-sm-12 unitime-PageHeader" id="unitime-Header">
+                    <div class="col-sm-12">
+                        <span class="mobile-menu-button" id='UniTimeGWT:MobileMenuButton'></span>
+                        <a href='main.jsp' tabIndex="-1" class="logo"></a>
+                    </div>
+                    <div class="col-sm-12">
+                        <span id='UniTimeGWT:Title' class="title">New College of Florida - Class Scheduling System</span>
+                        <span class='unitime-Header'><span id='UniTimeGWT:Header' class="unitime-InfoPanel"></span></span>
+                    </div>
         		</div>
                 <%-- <div id='UniTimeGWT:Content' <%=(!showBackground ? "class='unitime-MainContent'" : "class='unitime-MainContent unitime-MainLogo'")%>> --%>
                 <div id='UniTimeGWT:Content' <%=(!showBackground ? "class='unitime-MainContent'" : "class='unitime-MainContent'")%>>
-            		<span class="mobile-menu" id='UniTimeGWT:MobileMenuPanel'></span>
+            		<div class="col-sm-12 mobile-menu" id='UniTimeGWT:MobileMenuPanel'></div>
             		<% if (sysMessage != null && !sysMessage.trim().isEmpty()) { %>
             			<span class='messages'>
             				<div class='WelcomeRowHead'>System Messages</div>
@@ -156,8 +156,8 @@
             	</div>
             </div>
             <div class='footer' id="unitime-Footer">
-        		<div class="unitime-Footer">
-        			<div class="row">
+        		<div class="container unitime-Footer">
+        			<div class="col-sm-12">
         				<span class="cell left">
         					<span id='UniTimeGWT:Version'></span>
         					<tt:time-stamp/>
@@ -174,7 +174,16 @@
         </div>
     </div>
 </div>
-
+<script>
+    function removeElems() {
+        var elems = $('td').filter(function(){
+            return this.textContent.trim() === "Help"
+        }).hide();
+    }
+    $(document).ready(function() {
+        setTimeout(removeElems, 2000);
+    })
+</script>
 </BODY>
 <script language="JavaScript" type="text/javascript">
 	if (parent && parent.hideGwtDialog && parent.refreshPage) {

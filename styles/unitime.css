@@ -1647,11 +1647,13 @@ A.unitime-Hint:link,A.unitime-Hint:visited,A.unitime-Hint:active,A.unitime-Hint:
 .gwt-StackPanel .gwt-StackPanelItem {
   cursor: pointer;
   cursor: hand;
-  font-size: medium;
-  padding: 3px;
-  border: 1px solid #9CB0CE;
+  font-size: small;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #fff;
   border-bottom: 0px;
-  background: #d3def6 url(../unitime/gwt/standard/images/hborder.png) repeat-x 0px -989px;
+  background: #2070ab;
+
 }
 .gwt-StackPanel .gwt-StackPanelContent {
   border: 1px solid #9CB0CE;

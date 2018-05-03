@@ -76,80 +76,80 @@
 	<div id='UniTimeGWT:CustomPageMessages'></div>
 	<tt:offering-locks/>
 
-	<div class="unitime-Page"><div class='row'>
-	<div class='sidebar' id="unitime-SideMenu">
-    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Stack On Side">
-    			<div id='UniTimeGWT:SideStackMenu' style="display: block;" ></div>
-	    	</tt:propertyEquals>
-    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Tree On Side">
-    			<div id='UniTimeGWT:SideTreeMenu' style="display: block;" ></div>
-	    	</tt:propertyEquals>
-    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Static Stack On Side">
-    			<div id='UniTimeGWT:StaticSideStackMenu' style="display: block;" ></div>
-		    </tt:propertyEquals>
-    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Static Tree On Side">
-    			<div id='UniTimeGWT:StaticSideTreeMenu' style="display: block;" ></div>
-		    </tt:propertyEquals>
-    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Dynamic Stack On Side">
-    			<div id='UniTimeGWT:SideStackMenu' style="display: block;" ></div>
-		    </tt:propertyEquals>
-    		<tt:propertyEquals name="unitime.menu.style" user="true" value="Dynamic Tree On Side">
-    			<div id='UniTimeGWT:SideTreeMenu' style="display: block;" ></div>
-		    </tt:propertyEquals>
-    <script language="JavaScript" type="text/javascript">
-    	var sideMenu = document.getElementById("unitime-SideMenu").getElementsByTagName("div");
-    	if (sideMenu.length > 0) {
-    		var c = unescape(document.cookie);
-    		var c_start = c.indexOf("UniTime:SideBar=");
-    		if (c_start >= 0) {
-    			c_start = c.indexOf("|W:", c_start) + 3;
-    			var c_end = c.indexOf(";", c_start);
-    			if (c_end < 0) c_end=c.length;
-    			var width = c.substring(c_start, c_end);
-    			sideMenu[0].style.width = width + "px";
-    			// alert(c.substring(c.indexOf("UniTime:SideBar=") + 16, c_end));
-    		} else {
-    			sideMenu[0].style.width = (sideMenu[0].id.indexOf("StackMenu") >= 0 ? "172px" : "152px");
-    		}
-    	}
-    </script>
-	</div>
-    <div class='container'><div class='body' id="unitime-Page">
-    	<div class="unitime-PageHeader" id="unitime-Header">
-    		<div class="row">
-    			<div class="mobile-menu-button" id='UniTimeGWT:MobileMenuButton'></div>
-    			<a href='main.jsp' tabIndex="-1" class="logo"></a>
-    			<div class="content">
-					<div id='UniTimeGWT:Title' class="title"></div>
-					<div class='unitime-Header'><div id='UniTimeGWT:Header' class="unitime-InfoPanel"></div></div>
-					<div id='UniTimeGWT:TitlePanel' class='navigation'></div>
-				</div>
-			</div>
-		</div>
-		<div class="mobile-menu" id='UniTimeGWT:MobileMenuPanel'></div>
-		<div class="content">
-			<div id="UniTimeGWT:Loading" class="unitime-PageLoading">
-				Page is loading, please wait ...
-			</div>
-	    	<div id='UniTimeGWT:Body'></div>
-	    </div>
-    </div><div class='footer' id="unitime-Footer">
-		<div class="unitime-Footer">
-			<div class="row">
-				<div class="cell left">
-					<div id='UniTimeGWT:Version'></div>
-				</div>
-    			<%-- WARNING: Changing or removing the copyright notice will violate the license terms. If you need a different licensing, please contact us at support@unitime.org --%>
-				<div class="cell middle"><tt:copy/></div>
-				<div class="cell right"><tt:registration/></div>
-			</div>
-		</div>
-		<tt:hasProperty name="tmtbl.page.disclaimer">
-			<div class='unitime-Disclaimer'><tt:property name="tmtbl.page.disclaimer"/></div>
-		</tt:hasProperty>
-		<div class="unitime-VisibleAriaStatus" id='UniTimeGWT:AriaStatus'></div>
-	</div>
-</div></div></div>
+	<div class="unitime-Page">
+        <div class='row'>
+        	<div class='sidebar' id="unitime-SideMenu">
+            		<tt:propertyEquals name="unitime.menu.style" user="true" value="Stack On Side">
+            			<div id='UniTimeGWT:SideStackMenu' style="display: block;" ></div>
+        	    	</tt:propertyEquals>
+            		<tt:propertyEquals name="unitime.menu.style" user="true" value="Tree On Side">
+            			<div id='UniTimeGWT:SideTreeMenu' style="display: block;" ></div>
+        	    	</tt:propertyEquals>
+            		<tt:propertyEquals name="unitime.menu.style" user="true" value="Static Stack On Side">
+            			<div id='UniTimeGWT:StaticSideStackMenu' style="display: block;" ></div>
+        		    </tt:propertyEquals>
+            		<tt:propertyEquals name="unitime.menu.style" user="true" value="Static Tree On Side">
+            			<div id='UniTimeGWT:StaticSideTreeMenu' style="display: block;" ></div>
+        		    </tt:propertyEquals>
+            		<tt:propertyEquals name="unitime.menu.style" user="true" value="Dynamic Stack On Side">
+            			<div id='UniTimeGWT:SideStackMenu' style="display: block;" ></div>
+        		    </tt:propertyEquals>
+            		<tt:propertyEquals name="unitime.menu.style" user="true" value="Dynamic Tree On Side">
+            			<div id='UniTimeGWT:SideTreeMenu' style="display: block;" ></div>
+        		    </tt:propertyEquals>
+            <script language="JavaScript" type="text/javascript">
+            	var sideMenu = document.getElementById("unitime-SideMenu").getElementsByTagName("div");
+            	if (sideMenu.length > 0) {
+            		var c = unescape(document.cookie);
+            		var c_start = c.indexOf("UniTime:SideBar=");
+            		if (c_start >= 0) {
+            			c_start = c.indexOf("|W:", c_start) + 3;
+            			var c_end = c.indexOf(";", c_start);
+            			if (c_end < 0) c_end=c.length;
+            			var width = c.substring(c_start, c_end);
+            			sideMenu[0].style.width = width + "px";
+            			// alert(c.substring(c.indexOf("UniTime:SideBar=") + 16, c_end));
+            		} else {
+            			sideMenu[0].style.width = (sideMenu[0].id.indexOf("StackMenu") >= 0 ? "172px" : "152px");
+            		}
+            	}
+            </script>
+        	</div>
+            <div class='container'>
+                <div class='body row' id="unitime-Page">
+            	<div class="unitime-PageHeader col-sm-12" id="unitime-Header">
+        			<div class="mobile-menu-button" id='UniTimeGWT:MobileMenuButton'></div>
+        			<a href='main.jsp' tabIndex="-1" class="logo"></a>
+        			<div class="content">
+    					<div id='UniTimeGWT:Title' class="title"></div>
+    					<div class='unitime-Header'><div id='UniTimeGWT:Header' class="unitime-InfoPanel"></div></div>
+    					<div id='UniTimeGWT:TitlePanel' class='navigation'></div>
+    				</div>
+        		</div>
+        		<div class="mobile-menu" id='UniTimeGWT:MobileMenuPanel'></div>
+        		<div class="content">
+        			<div id="UniTimeGWT:Loading" class="unitime-PageLoading">
+        				Page is loading, please wait ...
+        			</div>
+        	    	<div id='UniTimeGWT:Body'></div>
+        	    </div>
+            </div><div class='footer' id="unitime-Footer">
+        		<div class="unitime-Footer col-sm-12">
+    				<div class="cell left">
+    					<div id='UniTimeGWT:Version'></div>
+    				</div>
+        			<%-- WARNING: Changing or removing the copyright notice will violate the license terms. If you need a different licensing, please contact us at support@unitime.org --%>
+    				<div class="cell middle"><tt:copy/></div>
+    				<div class="cell right"><tt:registration/></div>
+        		</div>
+        		<tt:hasProperty name="tmtbl.page.disclaimer">
+        			<div class='unitime-Disclaimer'><tt:property name="tmtbl.page.disclaimer"/></div>
+        		</tt:hasProperty>
+        		<div class="unitime-VisibleAriaStatus" id='UniTimeGWT:AriaStatus'></div>
+        	</div>
+        </div>
+    </div>
+</div>
 
     <script type="text/javascript" language="javascript" src="unitime/unitime.nocache.js"></script>
   </body>
